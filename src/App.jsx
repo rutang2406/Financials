@@ -91,10 +91,7 @@ function App () {
     return(
       <Loading />
     )
-  }
-  for(let i=0;i<processedData.newswimg.length;i++){
-    console.log(processedData.newswimg[i].url)
-  }  
+  } 
   return (
     
       <div className='w-[90vw] mx-auto flex scroll-smooth' style={{flexDirection: viewportWidth<725 ? 'column' : 'row'}}>
