@@ -6,7 +6,7 @@ import Loading from '../Loading/Loading';
 
 function Technology() {
 
-    const url = '/newsapi/news?q=technology'
+    const url = `${import.meta.env.VITE_PROXY_TARGET}/news?q=technology`
   const [data,setData] = useState([]);
 
   const [viewportWidth, setViewportWidth] = useState(window.innerWidth);

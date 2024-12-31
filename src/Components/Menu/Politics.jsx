@@ -5,7 +5,7 @@ import Bigger from '../Newsarch/Bigger';
 import Loading from '../Loading/Loading';
 
 function Politics() {
-  const url = '/newsapi/news?q=politics'
+  const url = `${import.meta.env.VITE_PROXY_TARGET}/news?q=politics`
   const [data,setData] = useState([]);
 
   const [viewportWidth, setViewportWidth] = useState(window.innerWidth);

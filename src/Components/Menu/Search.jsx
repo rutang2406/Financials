@@ -7,7 +7,7 @@ import Loading from '../Loading/Loading';
 
 function Search() {
   let {search}=useParams();
-  let url=`/newsapi/news?q=${search}`;
+  let url=`${import.meta.env.VITE_PROXY_TARGET}/news?q=${search}`;
   const [data,setData] = useState([]);
 
   const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
