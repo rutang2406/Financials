@@ -7,7 +7,7 @@ import Loading from '../Loading/Loading';
 
 function Search() {
   let {search}=useParams();
-  let url=`${import.meta.env.VITE_API_URL}q=${search}&apiKey=${import.meta.env.VITE_API_KEY}`;
+  let url=`/newsapi/news?q=${search}`;
   const [data,setData] = useState([]);
 
   const [viewportWidth, setViewportWidth] = useState(window.innerWidth);

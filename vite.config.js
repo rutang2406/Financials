@@ -6,10 +6,10 @@ export default defineConfig({
   server: {
     host: true,
     proxy: {
-      '/newsapi': { // Proxy for NewsAPI
-        target: 'https://newsapi.org',
-        changeOrigin: true, // Ensures the host header is modified to match the target
-        rewrite: (path) => path.replace(/^\/newsapi/, ''), // Removes '/newsapi' from the request
+      '/newsapi': {
+        target: 'https://server-kcc1.onrender.com/', // Proxy to your hosted server
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/newsapi/, ''),
       },
     },
   },

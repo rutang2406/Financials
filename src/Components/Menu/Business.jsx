@@ -5,7 +5,7 @@ import Bigger from '../Newsarch/Bigger';
 import Loading from '../Loading/Loading';
 
 function Business() {
-  const url = `${import.meta.env.VITE_API_URL}q=business&apiKey=${import.meta.env.VITE_API_KEY}`
+  const url = '/newsapi/news?q=business'
   const [data,setData] = useState([]);
 
   const [viewportWidth, setViewportWidth] = useState(window.innerWidth);

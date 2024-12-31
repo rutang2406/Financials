@@ -6,7 +6,7 @@ import Loading from '../Loading/Loading';
 
 function Technology() {
 
-    const url = `${import.meta.env.VITE_API_URL}q=technology&apiKey=${import.meta.env.VITE_API_KEY}`
+    const url = '/newsapi/news?q=technology'
   const [data,setData] = useState([]);
 
   const [viewportWidth, setViewportWidth] = useState(window.innerWidth);

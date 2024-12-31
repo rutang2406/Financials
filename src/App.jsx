@@ -5,8 +5,8 @@ import Bigger from './Components/Newsarch/Bigger';
 import Loading from './Components/Loading/Loading';
 function App () {
   const [data,setData] = useState([]);
-  const url = `${import.meta.env.VITE_API_URL}q=trending&apiKey=${import.meta.env.VITE_API_KEY}`
-  const seond_url = `${import.meta.env.VITE_TOP_HEADLINES}?country=us&apiKey=${import.meta.env.VITE_API_KEY}`
+  const url = '/newsapi/news?q=trending'
+  const seond_url = '/newsapi/news?q=top-headlines&country=us'
   const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
   const [isLoading, setIsLoading] = useState(true);
   const [processedData, setProcessedData] = useState({
