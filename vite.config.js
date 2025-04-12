@@ -9,13 +9,6 @@ export default defineConfig(({ mode }) => {
   return {
     server: {
       host: true,
-      proxy: {
-        '/newsapi': {
-          target: env.VITE_PROXY_TARGET, // Use the loaded environment variable
-          changeOrigin: true,
-          rewrite: (path) => path.replace(/^\/newsapi/, ''), // Remove "/newsapi" prefix
-        },
-      },
     },
     plugins: [react()],
     build: {

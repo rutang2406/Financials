@@ -24,6 +24,7 @@ function App () {
       try{  
         const result1 = await fetch(url);
         const response1 = await result1.json();
+        console.log(response1);
         response1.articles = response1.articles.map(article=>({...article,topHeadline:true,intonewswoimg:false,index:0}))
 
         const result2 = await fetch(seond_url);
